@@ -1,0 +1,35 @@
+h1{
+    font-size: 1.8rem;
+    margin-left: 13rem;
+    padding-bottom: 1rem;
+
+}
+.img{
+    width: 45rem;
+    height: 30rem;
+    border: 0.2rem solid grey;
+    margin-left: 2.75rem;
+}
+.img .img1{
+    padding-top: 0.5rem;
+    width: 20rem;
+    padding-left: 1rem;
+    margin-right: 0.5rem;
+}
+.img .img2{
+    padding-top: 0.5rem;
+    width: 20rem;
+    padding-left: 2.2rem;
+}
+.img .img3{
+    padding-top: 0.3rem;
+    width: 20rem;
+    padding-left: 1rem;
+    margin-right: 1.5rem;
+}
+.img .img4{
+    padding-top: 0.3rem;
+    width: 20rem;
+    padding-left: 1rem;
+    margin-right: 1.5rem;
+}

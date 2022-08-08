@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+}
+html{
+    font-size: 75%;
+    scroll-behavior: smooth;
+    scroll-padding: 4rem;
+    overflow-x: hidden;
+}
+section:nth-child(even)
+{
+    background-color: lightgrey;
+}
+.header{
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid grey;
+}
+.header .header-data .header-left{
+    padding-top: 1rem;
+}
+.header .header-data .header-left a{
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    color: black;  
+    transition: 0.5s;
+    padding-left: 1.2rem;
+}
+.header .header-data .header-left a:hover{
+    color: red;
+}
+.header .header-data .header-right{
+    margin-top: -1rem;
+}
+.header .header-data .header-right ul{
+    margin-left: 48rem;
+    display: flex;
+    gap: 2.2rem;
+}
+.header .header-data .header-right ul li{
+    list-style: none;
+}
+.header .header-data .header-right ul li a{
+    font-size: 1.5rem;
+    color: black;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+.header .header-data .header-right ul li a:hover{
+    color: red;
+    border-bottom: 0.15rem solid grey;
+}
+.home{
+    padding-bottom: 3rem;
+}
+.home .home-data .home-left .pic{
+    margin-top: 3rem;
+    width: 40rem;
+    height: 35rem;
+    margin-left: 4rem;
+}
+.home .home-data{
+    display: flex;
+}
+
+.home .home-data .home-right h1{
+   margin-top: 2.5rem;
+   margin-left: 23rem;
+   font-size: 3rem;
+   text-decoration: underline;
+   color: red;
+   padding-bottom: 1rem;
+}
+.home .home-data .home-right p{
+    margin-left: 7rem;
+    font-size: 1.38rem;
+    line-height: 1.5;
+}
+.service{
+    padding-bottom: 3rem;
+}
+.service .service-data h1{
+    padding-top: 1.8rem;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.service .service-data span{
+    color: red;
+}
+.service .service-data .service-info{
+    display: flex;
+}
+.gallery{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 45rem;
+}
+.gallery .gallery-data h1{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.gallery span{
+    color: red;
+}
+.gallery .gallery-data .gallery-info{
+    display: flex;
+    justify-content: space-around;
+}
+.branch{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 60rem;
+}
+.branch .branch-data h1{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.branch span{
+    color:red;
+}
+.branch .branch-data{
+    background-color: aquamarine;
+}
+.branch .branch-data .branch-info{
+    display: inline-block;
+    justify-content: space-around;
+    width: 45.8rem;
+    height: 50rem;
+    border: 0.2rem solid grey;
+    margin-left: 0.8rem;
+    margin-bottom: 4rem;
+}
+.branch .branch-data .branch-info a{
+    font-size: 1.2rem;
+}
+.feedback{
+    margin-top: 1rem;
+}
+.feedback .feedback-data{
+    width: 30rem;
+    height: 28rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.feedback .feedback-data h1{
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    margin-left: 7rem;
+    padding-bottom: 1rem;
+    text-decoration: underline;
+    color: red;
+}
+.feedback .feedback-data form{
+    border: 1px solid red;
+    width: 25rem;
+    height: 22rem;
+    border-radius: 1rem;
+}
+.feedback .feedback-data form input{
+    width: 22rem;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+.feedback .feedback-data form  #x{
+  height: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+
+}
+.feedback .feedback-data form  #y{
+    height: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+
+}
+.feedback .feedback-data form #z{
+    height: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.feedback .feedback-data form #k{
+    height: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+
+}
+.feedback .feedback-data form select{
+    margin-left: 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+}
+.feedback .feedback-data form #s{
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    margin-left: 1.4rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: black;
+    color: #fff;
+}
+.contact{
+    background-color: yellow;
+}
+.contact h1{
+    text-align: center;
+    font-size: 1.95rem;
+}
+.contact span{
+    color: red;
+}
+
+.contact table th{
+    font-size: 1.7rem;
+}
+.contact table td{
+    font-size: 1.5rem;
+}

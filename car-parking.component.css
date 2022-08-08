@@ -1,0 +1,33 @@
+h1{
+    margin-left: 20rem;
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+.img{
+    width: 45rem;
+    height: 30rem;
+    border: 0.2rem solid grey;
+    display: flex;
+    justify-content: space-around;
+}
+.img .img1{
+    padding-top: 1rem;
+    width: 13rem;
+    padding-bottom: 1rem;
+    transition: 0.5s;
+}
+.img .img2{
+    padding-top: 1rem;
+    width: 13rem;
+    padding-bottom: 1rem;
+    transition: 0.5s;
+}
+.img .img3{
+    padding-top: 1rem;
+    width: 13rem;
+    padding-bottom: 1rem;
+    transition: 0.5s;
+}
+.img1:hover,.img2:hover,.img3:hover{
+    transform: scale(1.05);
+}

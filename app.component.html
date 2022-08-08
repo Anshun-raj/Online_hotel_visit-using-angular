@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Online Hotel</title>
+</head>
+<body>
+     <section class="header">
+            <div class="header-data">
+              <div class="header-left">
+                <a href="#">Narayan's Yard</a>
+            </div>
+            <div class="header-right">
+                <ul>
+                  <li><a href="#home">home</a></li>
+                  <li><a href="#service">service</a></li>
+                  <li><a href="#gallery">gallery</a></li>
+                  <li><a href="#branch">branch</a></li>
+                  <li><a href="#feedback">Feedback</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+     </section>
+     <section class="home" id="home"> 
+          <div class="home-data">
+             <div class="home-left">
+                <img src="../assets/Image/362619.jpg" class="pic">
+             </div>
+             <div class="home-right">
+                <h1>Our Info</h1>
+                <p>Our hotel are one among the best hotels in India.Our hotel<br> provides paid lodging on a short-term basis.<br> Facilities provided inside a hotel room may range from modest <br>quality mattress in a small room to large suites with bigger,<br>higher-quality beds, a dresser, a refrigerator and other kitchen<br>facilities,upholstered chairs, a flat screen television, and<br> en-suite bathrooms.Small, lower-priced hotels may offer only<br> the most basic guest services and facilities.Larger,higher-priced<br> hotels may provide additional guest facilities such as swimming<br> pool, business centre, childcare, conference and event facilities,<br> tennis or basketball courts, gymnasium, restaurants, day spa,<br> and social function services.Some boutique, high-end hotels have<br> custom decorated rooms. Some hotels offer meals as part of a<br> room and board arrangement. In Japan, capsule hotels provide a<br> tiny room suitable only for sleeping and shared bathroom facilities.</p>
+             </div>
+          </div>
+     </section>
+     <section class="service" id="service">
+          <div class="service-data">
+               <h1>Our <span>Services</span></h1>
+               <div class="service-info">
+                <div class="dinning">
+                  <app-dinning></app-dinning>
+                </div>
+                <div class="swimmimg">
+                  <app-swimming></app-swimming>
+                </div>
+               </div>
+          </div>
+     </section>
+    <section class="gallery" id="gallery">
+      <div class="gallery-data">
+             <h1>Our <span>Gallery</span></h1>
+              <div class="gallery-info">
+                <div class="kitchen">
+                  <app-kitchen></app-kitchen>
+                </div>
+                <div class="parking">
+                  <app-car-parking></app-car-parking>
+                </div>
+              </div>
+             </div>
+    </section>
+    <section class="branch" id="branch">
+        <div class="branch-data">
+      <h1>Branch <span>Info</span></h1>
+            <div class="branch-info">
+                <app-branch1></app-branch1>
+            </div>
+            <div class="branch-info">
+                <app-branch2></app-branch2>
+            </div>
+        </div>
+    </section>
+    <section class="feedback" id="feedback">
+        <div class="feedback-data">
+          <h1>Feedback Form</h1>
+            <form #dataCollect="ngForm" (ngSubmit)="getFeedback(dataCollect.value)">
+                <input type="text" id="x" name="name" placeholder="enter your name" ngModel><br>
+                <input type="number" id="y" name="age" placeholder="enter your age" ngModel><br>
+                <input type="file" id="z" name="file" placeholder="upload your aadharCard" ngModel><br>
+                <input type="date" id="k" name="date" ngModel>
+                <select name="choose">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select><br>
+                <button type="button" id="s">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="contact" id="contact" appCustomStyle>
+            <h1>Collegues <span>Details</span></h1>
+                <table>
+                     <tr>
+                         <th>postId</th>
+                         <th>Id</th>
+                         <th>Name</th>
+                         <th>Email</th>
+                     </tr>
+                     <tr *ngFor="let item of info">
+                        <td>{{item.postId}}</td>
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.email}}</td>
+                     </tr>
+                </table>
+    </section>
+</body>
+</html>
